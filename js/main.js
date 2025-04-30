@@ -1,4 +1,4 @@
-/* === GLOBAL VARIABLES === */
+/* === Global Variables === */
 let nameFlag = true
 let capitalFlag = false
 let populationFlag = false
