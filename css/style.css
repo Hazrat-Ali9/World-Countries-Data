@@ -1,0 +1,404 @@
+/* ===GENERAL ===*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* margin: 0 1rem; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*=== HEADER ===*/
+
+header {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgb(240, 240, 240);
+}
+
+header h2 {
+  font-size: 4rem;
+  margin: 0.5rem auto;
+  letter-spacing: 0.25rem;
+  font-weight: 600;
+  color: #ffa500;
+}
+
+.subtitle {
+  color: #555;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.feedback {
+  margin: 0.5rem;
+  font-style: italic;
+  font-size: 1.6rem;
+  color: #ffa500;
+  font-weight: 500;
+}
+
+/*=== MAIN === */
+
+input {
+  color: #ffa500;
+  width: 50%;
+  height: 5rem;
+  margin: 3rem auto;
+  text-indent: 2rem;
+  outline: none;
+  border: 0.2rem solid rgb(250, 246, 246);
+  font-size: 2rem;
+  border-radius: 3rem;
+  background: rgb(250, 246, 246);
+}
+
+input:hover,
+input:focus {
+  box-shadow: 0 0 0.1rem 0.1rem rgb(236, 230, 230);
+  background: rgb(250, 246, 246);
+}
+
+input::placeholder {
+  font-size: 2rem;
+  font-weight: 100;
+  opacity: 0.65;
+  color: rgb(138, 115, 115);
+}
+
+.countries-wrapper {
+  background: rgb(240, 240, 240);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-items: center;
+  margin: 1rem 0 3rem 0;
+  padding: 1rem;
+}
+
+.country {
+  max-width: 25rem;
+  min-width: 25rem;
+  text-align: center;
+  margin: 0.5rem;
+  padding: 2rem;
+  border-radius: 0.2rem;
+  background: white;
+}
+
+.country:hover {
+  box-shadow: 0 0.1rem 1rem #cfc9c7;
+  -webkit-transition: all 0.2s ease-in;
+  transform: scale(1.015);
+}
+
+.country_flag {
+  height: 12rem;
+  width: 20rem;
+  text-align: center;
+  margin: auto;
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 75%;
+  max-height: 75%;
+  min-width: 75%;
+  min-height: 75%;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 0.6rem 0.2rem rgb(241, 225, 225);
+}
+
+.country_name {
+  font-size: 1.6rem;
+  color: #ffa500;
+  letter-spacing: 0.075rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+.country p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 0.2rem;
+  color: #747474;
+  text-align: left;
+  letter-spacing: 0.05rem;
+}
+
+.country span {
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.2rem auto;
+  position: relative;
+}
+
+.buttons button {
+  display: inline-block;
+  width: 18rem;
+  height: 4.5rem;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 1.5rem;
+  background: #ffa500;
+  letter-spacing: 0.075rem;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 600;
+  border-radius: 8rem;
+}
+
+button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button i {
+  position: absolute;
+  font-size: 1.6rem;
+  margin: auto 1.5rem;
+  color: #333;
+}
+
+.capital i,
+.population i {
+  display: none;
+}
+
+.graph-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.graph-buttons button {
+  background: #ffa500;
+  display: inline-block;
+  width: 12rem;
+  height: 3rem;
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  margin: auto 0.5rem;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.075rem;
+  font-size: 1.25rem;
+}
+
+.controls {
+  width: 100%;
+  text-align: center;
+}
+
+.wrapper {
+  box-shadow: 0px 0px 4px 1px rgba(51, 51, 51, 0.2);
+  padding-top: 2.5rem;
+}
+
+.graph-title {
+  color: #333;
+  font-weight: 600;
+  font-size: 1.35rem;
+  padding: 0.5rem;
+}
+
+.graphs {
+  background: rgb(240, 240, 240);
+  position: relative;
+  padding: 1rem;
+}
+
+.graph-wrapper {
+  width: 100%;
+  min-height: 60vh;
+  position: relative;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+}
+
+.bars {
+  display: grid;
+  grid-template-columns: 10% 50% 15%;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  letter-spacing: 0.075rem;
+  grid-gap: 0.5rem 0.5rem;
+  margin: 0.5rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.bar {
+  background: #ffa500;
+  border-radius: 0.2rem;
+  border: 0.1rem solid #ffa500;
+}
+
+i {
+  font-size: 56px;
+  color: #ffa500;
+  font-weight: 600;
+}
+
+h4 {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+/* footer */
+footer {
+  background: rgb(236, 230, 230);
+  padding: 20px;
+  text-align: center;
+}
+/* icons style */
+
+.copyright {
+  color: white;
+  font-size: 14px !important;
+  color: black;
+}
+.footer-wrapper > div a {
+  margin: 25px;
+}
+
+.fa-github-square {
+  font-size: 32px;
+  margin: 30px;
+  color: #333;
+}
+.fa-linkedin {
+  color: #0077b5;
+  font-size: 32px;
+  margin: 30px;
+}
+.fa-twitter-square {
+  color: #1da1f2;
+  font-size: 32px;
+  margin: 30px;
+}
+.arrow-icon-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.fa-chevron-circle-up {
+  cursor: pointer;
+  font-size: 32px;
+  color: #f3d36b;
+}
+.fa-chevron-circle-up:hover {
+  color: #ffa500;
+}
+.fa-quote-left,
+.fa-quote-right {
+  color: #b9b5b5;
+  font-size: 16px;
+  background: #f3d36b;
+}
+.fa-youtube-square {
+  color: #ff0000;
+  font-size: 32px;
+  margin: 30px;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 0.5rem;
+  }
+  header h2 {
+    font-size: 2.5rem;
+    letter-spacing: 0.25rem;
+  }
+  input {
+    width: 100%;
+    font-size: 2rem;
+    border-radius: 0.2rem;
+  }
+  input::placeholder {
+    font-size: 1.35rem;
+  }
+  .buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .buttons button,
+  .buttons a {
+    width: 100%;
+    margin: 0.5rem auto;
+    border-radius: 0.5rem;
+  }
+  .country {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .wrapper {
+    box-shadow: 0px 0px 4px 1px rgba(51, 51, 51, 0.2);
+    padding-top: 1rem;
+  }
+  .graph-title {
+    color: #333;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  .graphs {
+    background: rgb(240, 240, 240);
+    position: relative;
+    padding: 1rem;
+  }
+  .graph-wrapper {
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  .bars {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 0.5rem 0.5rem;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 0.075rem;
+    padding: 0.1rem 0.1rem;
+    font-size: 1.25rem;
+  }
+  .bar {
+    background: #ffa500;
+    border-radius: 0.2rem;
+    border: 0.1rem solid #ffa500;
+  }
+  footer {
+    margin-top: 15px;
+  }
+
+  footer i,
+  h5 {
+    font-size: 2rem;
+    color: #ffa500;
+    font-weight: 600;
+  }
+}

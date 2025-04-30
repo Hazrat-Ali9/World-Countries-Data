@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>World Countries Data</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <meta property="og:title" content="World Countries data" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://github.com/Hazrat-Ali9/World-Countries-Data"
+    />
+    <meta
+      property="og:description"
+      content="All countreies data in one place"
+    />
+    <meta property="og:image" content="./images/og_1200x627.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body id="top">
+    <header id="countries">
+      <h2>World Countries Data</h2>
+      <p class="subtitle"></p>
+      <p class="feedback"></p>
+    </header>
+    <main>
+      <div class="controls">
+        <input
+          class="search-input"
+          type="text"
+          placeholder="Search countries by name, city and languages"
+          autofocus
+        />
+
+        <div class="buttons">
+          <button class="name">
+            Name <i class="fas fa-long-arrow-alt-down name" disabled></i>
+          </button>
+          <button class="capital">
+            Capital <i class="fas fa-long-arrow-alt-down capital" disabled></i>
+          </button>
+          <button class="population">
+            Population
+            <i class="fas fa-long-arrow-alt-down population" disabled></i>
+          </button>
+          <a href="#stat"><i class="fas fa-chart-bar"></i></a>
+        </div>
+      </div>
+
+      <div class="countries-wrapper"></div>
+      <div class="wrapper">
+        <div class="graph-buttons">
+          <button class="population">Population</button>
+          <button class="languages">Langauges</button>
+        </div>
+        <h4 class="graph-title"></h4>
+        <div class="graphs">
+          <div class="graph-wrapper" id="stat"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <small class="copyright"
+          >Copyright Hazrat Ali. All Rights Reserved.</small
+        >
+      </div>
+      <div>
+        <a href="https://github.com/Hazrat-Ali9" target="_blank"
+          ><i class="fab fa-github-square"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/hazratali9" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://x.com/Hazrat_Ali9" target="_blank"
+          ><i class="fab fa-twitter-square"></i
+        ></a>
+      </div>
+      <div class="arrow-icon-wrapper">
+        <a href="#top">
+          <i class="fas fa-chevron-circle-up"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="./js/countries.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
