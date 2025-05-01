@@ -19,4 +19,4 @@ The following technologies are used to develop this application:
 Hazrat Ali
 
 ### Demo
-[Go Live](https://github.com/Hazrat-Ali9/World-Countries-Data)
+[Go Live](https://hazrat-ali-world.vercel.app/)
